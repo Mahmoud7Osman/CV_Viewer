@@ -3,7 +3,7 @@
 
 int main(int argc, char** argv){
 	if (argc < 2) {
-		std::fprintf(stderr, "Usage: %s <image path>", argv[0]);
+		std::fprintf(stderr, "Usage: %s <image path>\n", argv[0]);
 		return 1;
 	}
 
@@ -11,7 +11,7 @@ int main(int argc, char** argv){
 	cv::namedWindow("Image", cv::WINDOW_NORMAL);
 	
 	if (img.empty()){
-		std::fprintf(stderr, "Error: Cannot Read Image At %s", argv[1]);		
+		std::fprintf(stderr, "Error: Cannot Read Image At %s\n", argv[1]);		
 		return 2;
 	}
 
